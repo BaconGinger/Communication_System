@@ -1,0 +1,33 @@
+# 文本文件入库时统一按 LF 存储，检出时按平台自动转换（Windows 上仍是 CRLF）
+* text=auto
+
+# 源码与脚本：明确按文本处理，diff 才看得清
+*.v      text
+*.sv     text
+*.vh     text
+*.svh    text
+*.vhd    text
+*.m      text
+*.coe    text
+*.xdc    text
+*.tcl    text
+*.xpr    text
+*.xci    text
+*.md     text
+*.txt    text
+*.py     text
+
+# 二进制文件：禁止任何换行符转换
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.bmp    binary
+*.gif    binary
+*.pdf    binary
+*.docx   binary
+*.pptx   binary
+*.xlsx   binary
+*.zip    binary
+*.mat    binary
+*.wdb    binary
+*.bit    binary
